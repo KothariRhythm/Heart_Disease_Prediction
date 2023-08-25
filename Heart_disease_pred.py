@@ -9,10 +9,10 @@ import pickle
 import streamlit as st
 
 # loading the models
-rfc_model = pickle.load(open('heart_disease_trained_model_rfc.sav','rb'))
-dt_model = pickle.load(open('heart_disease_trained_model_dt.sav','rb'))
-lr_model = pickle.load(open('heart_disease_trained_model_lr.sav','rb'))
-standardize = pickle.load(open('StandardFunction.sav','rb'))
+rfc_model = pickle.load(open('/mount/src/heart_disease_prediction/heart_disease_trained_model_rfc.sav','rb'))
+dt_model = pickle.load(open('/mount/src/heart_disease_prediction/heart_disease_trained_model_dt.sav','rb'))
+lr_model = pickle.load(open('/mount/src/heart_disease_prediction/heart_disease_trained_model_lr.sav','rb'))
+standardize = pickle.load(open('/mount/src/heart_disease_prediction/StandardFunction.sav','rb'))
 
 #title of web page
 st.title('Heart Disease Prediction using Machine Learning')
